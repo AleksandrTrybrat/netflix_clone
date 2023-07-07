@@ -1,6 +1,5 @@
 'use strict';
 
-// banner.js
 
 // SWAGGER API
 const API_KEY_KINOPOISK = '4d50104c-a87b-4ffd-883e-e4511dea4c8b';
