@@ -6,8 +6,8 @@ const path = require('path');
 app.on('ready', () => {
   const mainWindow = new BrowserWindow({
 		show: false,
-    width: 1920,
-    height: 1080,
+    width: 980,
+    height: 820,
 		autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true,

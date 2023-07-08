@@ -218,3 +218,13 @@ displayMovieDetails(movieId, 'ru');
 const genreIds = [28, 12, 35, 18, 14, 16, 10751];
 
 
+ // Ожидаем загрузки контента
+window.addEventListener('load', () => {
+  // Скрываем прелоадер
+  const preloader = document.querySelector('.preloader');
+  preloader.style.display = 'none';
+
+  // Отображаем контент
+  const content = document.querySelector('.main');
+  content.style.display = 'block';
+});

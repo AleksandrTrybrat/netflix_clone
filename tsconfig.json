@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
-    "target": "ES2020",
+    "target": "ES2016",
     "outDir": "./public/JS",
     // "outFile": "./public/JS/favorites.js",
     "moduleResolution": "node"
