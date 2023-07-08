@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2016",
+    "outDir": "./public/JS",
+    // "outFile": "./public/JS/favorites.js",
+    "moduleResolution": "node"
+  },
+  "include": ["./public/TS/*.ts"],
+  "exclude": ["node_modules"]
+}
