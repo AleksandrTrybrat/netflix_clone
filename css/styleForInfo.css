@@ -784,11 +784,25 @@ img {
 
 
  /* Стили прелоадера */
- .preloader {
+/* .preloader {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+} */
+.preloader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  z-index: 49;
 }
 
 .preloader__spinner {
