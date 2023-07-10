@@ -435,11 +435,11 @@ body {
 .slider__poster-genre {
 	position: relative;
 	display: block;
-  height: 265px;
+  height: 350px;
 }
 
 .slider__poster {
-	min-width: 100%;
+	width: 100%;
   height: 100%;
 	transition: transform 0.5s;
 }

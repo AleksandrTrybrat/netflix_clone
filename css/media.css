@@ -4,6 +4,9 @@
 		margin: 0 auto;
 		padding: 0 20px; /*(отступы безопасности чтобы вьюпорт (контент) не прижимался к краям страницы)при добалении отступа в 15рх в min-width добавляем 30рх и значение будет не 1250 - а 1280рх*/
 	}
+	.form__btn {
+		padding: 7px 12px;
+	}
 	.banner__img {
 		position: relative;
 		height: 650px;
@@ -48,8 +51,10 @@
 	#saved__movies-container {
 		margin-bottom: 50px;
 	}
+	#registration {
+		height: 50%;
+	}
 }
-
 
 /* 1024 */
 @media (max-width: 1024px) {
@@ -78,6 +83,9 @@
 		/* Цвет нижнего перехода в банере */
 		background-image: var(--background-gradient);
 		z-index: 2;
+	}
+	.form__btn {
+		padding: 7px 10px;
 	}
 	.column {
 		margin-right: 36px;
@@ -109,12 +117,21 @@
 		margin: 0 auto;
 		margin-bottom: 15px;
 	}
+
+	#reg {
+		display: block;
+		width: 100%;
+	}
+
+	.slider__poster-genre {
+		height: 230px;
+	}
 }
 
 /* Tablet */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 	[class*="__container"]{  /*селектор атрибута*/
-		max-width: 767.98px;
+		max-width: 768px;
 		margin: 0 auto;
 		padding: 0 15px; /*(отступы безопасности чтобы вьюпорт (контент) не прижимался к краям страницы)при добалении отступа в 15рх в min-width добавляем 30рх и значение будет не 1250 - а 1280рх*/
 	}
@@ -127,6 +144,10 @@
 	}
 	.menu__item {
 		margin-right: 20px;
+	}
+
+	.form__btn {
+		padding: 6px 8px;
 	}
 	.search__container {
 		position: relative;
@@ -193,13 +214,15 @@
 		display: block;
 		height: 300px;
 	}
+	
 	.footer__link {
 		display: flex;
 		justify-content: flex-start;
 		/* margin-left: 50px; */
 	}
 	.footer__icons {
-		margin-left: 40px;
+		/* margin-left: 40px; */
+		padding-left: 0px;
 	}
 	.column__left, .column__right {
 		display: block;
@@ -211,7 +234,7 @@
 
 	.link__footer {
 		color: var(--footer-text-color);
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	.modal__card {
@@ -229,6 +252,36 @@
 		width: 200px;
 		margin: 0 auto;
 		margin-bottom: 15px;
+	}
+
+	#reg1 {
+		height: auto;
+		margin-top: 10px;
+	}
+
+	#registration {
+		width: 100%;
+		padding: 10px;
+	}
+
+	#registration h1 {
+		font-size: 30px;
+	}
+
+	#registration .step2Form h1 {
+		font-size: 20px;
+	}
+
+	#registration .step2Form div {
+		font-size: 14px;
+	}
+
+	#registration h3 {
+		font-size: 18px;
+	}
+
+	#registration p {
+		font-size: 20px;
 	}
 }
 
@@ -355,6 +408,7 @@
 	.slider__film{
 		height: 200px;
 	}
+
 	.slider__poster {
 		width: 150px;
 		height: 200px;
@@ -372,9 +426,12 @@
 	.slider__poster-genre {
 		position: relative;
 		display: block;
-		height: 180px;
+		width: 150px;
+		height: 200px;
 	}
-
+	.slider__poster-link {
+		height: 250px;
+	}
 	.footer__container {
 		text-align:left;
 		margin-left: -36px;
@@ -398,6 +455,7 @@
 		font-size: 14px;
 		margin-bottom: 20px;
 	}
+
 
 	.modal__card {
 		background-color: #ffffff;
@@ -441,8 +499,60 @@
 
 	.registration__form {
 		position: relative;
+		width: 50px;
+		height: 65px;
 	}
 	.form__btn {
-		padding: 6px 8px;
+		padding: 6px 7px;
+		margin-right: 10px;
+	}
+
+	#registration {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    #registration h1 {
+      font-size: 32px;
+    }
+  
+    #registration .step2Form h1 {
+      font-size: 20px;
+    }
+  
+    #registration .step2Form div {
+      font-size: 14px;
+    }
+  
+    #registration h3 {
+      font-size: 14px;
+			line-height: 1.5;
+    }
+  
+    #registration p {
+      font-size: 18px;
+    }
+    
+    #reg1 {
+        height: auto;
+        margin-top: 10px;
+    }
+
+		#buttonStep2 {
+			width: 35%;
+			height: 45px;
+		}
+		#emailStep2 {
+			width: 80%;
+		}
+		.inputContainerStep2 {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			row-gap: 10px;
+		}
+		#registration {
+			height: 60%;
 	}
 }

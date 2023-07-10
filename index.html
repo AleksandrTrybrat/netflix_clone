@@ -7,10 +7,31 @@
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/style.css">
+	<!-- <link rel="stylesheet" href="./css/reg-try-media-try.css"> -->
+	<link rel="stylesheet" href="./css/reg-try.css">
 	<link rel="stylesheet" href="./css/media.css">
+
+	<link rel="stylesheet" href="./css/slider.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+	<script type="module" src="./public/JS/api.js"></script>
+	<script type="module" src="./js/header-film.js"></script>
+	<script type="module" src="./js/search.js"></script>
+	<script type="module" src="./js/banner.js"></script>
+
+	<script type="module" src="./js/genre-list-try.js"></script>
+	<script type="module" src="./js/modal.js"></script>
+	<script type="module" src="./js/burger.js"></script>
+
+	<script type="module" src="./js/reg-try.js"></script>
+	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<script  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 	<title>Netflix</title>
 </head>
 <body>
+
 
 	<!-- 
 		HEADER NAVIGATION
@@ -30,7 +51,7 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="./index.html" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="./index.html" class="menu__link" id="home-link">Главная</a></li>
 							<li class="menu__item"><a href="./films.html" class="menu__link">Фильмы</a></li>
 							<li class="menu__item"><a href="./favorites.html" class="menu__link">Мой список</a></li>
 						</ul>
@@ -43,6 +64,7 @@
 							</form>
 						</div>
 						<div class="registration__form">
+							<img class="nav__avatar" src="">
 							<button class="form__btn">Вход</button>
 							<!-- <img src="img/netflix-avatar.png" alt="Avatar" class="nav__avatar"> -->
 						</div>
@@ -50,12 +72,36 @@
 				</div>
 			</div>
 		</header>
-
+		<!-- 
+			REGISTRATION
+		-->
+		<div id="registration">
+			<div id="reg">
+			<h1>Фильмы,сериалы и другой контент без <div class="line-break">ограничений</div></h1>
+			<p>Смотрите везде.Отменить подписку можно в любой момент</p>
+			<h3>Готовы к просмотру? Введите адрес электроной почты чтоб оформить или возобновить подписку</h3>
+			<div class="inputContainerStep2">
+				<input type="email" id="emailStep2" placeholder="Адрес электронной почты" required>
+				<button id="buttonStep2">Начать</button>
+			</div>
+			</div>
+	
+			<div id="reg1">
+			<div class="step2Form">
+			<h1>Создайте пароль чтоб начать использовать подписку</h1>
+			<div>Еще пару шагов и все готово!</div>
+			<div>Мы тоже не любим лишнии документы.</div>
+			</div>
+			<input type="email" id="emailStep3" placeholder="Адрес электронной почты" required>
+			<input type="password" id="passwordStep3" placeholder="Добавить пароль" required>
+			<button id="buttonStep3">Далее</button>
+			</div>
+		</div>
 		<!-- 
 			MAIN SECTION
 		-->
 		<main class="main">
-			<section class="banner">
+			<section class="banner" id="banner-for-reg">
 
 				<div class="banner__container">
 					<div class="banner__contents">
@@ -84,7 +130,7 @@
 
 
 			<!-- GENRE FILMS -->
-			<section class="films">
+			<section class="films" id="films-for-reg">
 				<div class="films__container">
 					<div class="genre__film"></div>
 					<div class="movie__details"></div>
@@ -97,7 +143,7 @@
 
 		</main>
 
-		<footer class="footer">
+		<footer class="footer" id="footer-for-reg">
 			<div class="footer__container">
 				<div class="footer__icons">
 					<a href="https://www.facebook.com/netflix/"><img src="./img/icons/facebook.svg" alt="Facebook" class="footer__social"></a>
@@ -137,13 +183,14 @@
 	</div>
 
 	<!--<script type="module" src="./js/api.js"></script> -->
-	<script type="module" src="./public/JS/api.js"></script>
+
+	<!-- <script type="module" src="./public/JS/api.js"></script>
 	<script type="module" src="./js/header-film.js"></script>
 	<script type="module" src="./js/search.js"></script>
 	<script type="module" src="./js/banner.js"></script>
 	<script type="module" src="./js/genre-list.js"></script>
 	<script type="module" src="./js/modal.js"></script>
-	<script type="module" src="./js/burger.js"></script>
+	<script type="module" src="./js/burger.js"></script> -->
 
 	<!-- <script src="./js/electron.js"></script> -->
 
