@@ -115,6 +115,9 @@ body {
   justify-content: center;
 }
 
+.nav__avatar {
+	border-radius: 5px;
+}
 /* BURGER */
 .header__burger-btn {
 	display: none;

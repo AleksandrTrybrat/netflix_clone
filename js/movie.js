@@ -170,9 +170,6 @@ console.log(movie)
     // trailerContainer.style.backgroundImage = `url(${IMAGE_BASE_URL}w1280${movie.poster})`;
 
     if (trailerIds.length === 0) {
-      // Отображение трейлеров
-      trailerContainer.style.backgroundImage = `url(${IMAGE_BASE_URL}w1280${movie.poster})`;
-    } else {
       // Отображение заглушки для отсутствующего трейлера
       const noTrailerMessage = document.createElement('div');
       noTrailerMessage.classList.add('no__trailers');
@@ -183,6 +180,9 @@ console.log(movie)
       `
       // noTrailerMessage.textContent = 'Трейлер отсутствует';
       trailerContainer.appendChild(noTrailerMessage);
+    } else {
+      // Отображение трейлеров
+      trailerContainer.style.backgroundImage = `url(${IMAGE_BASE_URL}w1280${movie.poster})`;
     }
 
 // Сердце остается красным если фильм уже добавлен в мой список

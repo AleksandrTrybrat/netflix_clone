@@ -7,7 +7,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import { API_KEY_TMDB } from './api.js';
+import { API_KEY_TMDB } from './api';
 // Функция для получения трейлеров и открытия трейлера, соответствующего выбранному фильму
 function loadAndOpenTrailer(movieId) {
     return __awaiter(this, void 0, void 0, function* () {

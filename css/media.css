@@ -255,8 +255,7 @@
 	}
 
 	#reg1 {
-		height: auto;
-		margin-top: 10px;
+		padding: 10px 0 20px 0;
 	}
 
 	#registration {
@@ -500,7 +499,7 @@
 	.registration__form {
 		position: relative;
 		width: 50px;
-		height: 65px;
+		height: 40px;
 	}
 	.form__btn {
 		padding: 6px 7px;
@@ -534,8 +533,7 @@
     }
     
     #reg1 {
-        height: auto;
-        margin-top: 10px;
+			width: 100%;
     }
 
 		#buttonStep2 {
@@ -544,6 +542,9 @@
 		}
 		#emailStep2 {
 			width: 80%;
+		}
+		#emailStep3, #passwordStep3, #buttonStep3 {
+			width: 90%;
 		}
 		.inputContainerStep2 {
 			display: flex;
@@ -554,5 +555,14 @@
 		}
 		#registration {
 			height: 60%;
+	}
+	.step2Form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	.step2Form h1 {
+		text-align: center;
 	}
 }

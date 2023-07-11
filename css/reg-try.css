@@ -181,12 +181,12 @@
     justify-content: flex-start;
 }
   
-.nav__avatar {
+/* .nav__avatar {
     width: 40px;
     object-fit: contain;
     margin-right: 10px;
     border-radius: 5px;
-}
+} */
   
 #registration .error-message {
     color: red;
