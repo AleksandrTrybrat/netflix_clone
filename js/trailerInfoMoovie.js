@@ -60,3 +60,4 @@ function playTrailerClick(movieId) {
   playTrailer.addEventListener('click', () => loadAndOpenTrailer(movieId));
 }
 
+
