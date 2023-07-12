@@ -35,5 +35,8 @@
       "perMachine": false,
       "allowToChangeInstallationDirectory": true
     }
+  },
+  "dependencies": {
+    "jquery": "^3.7.0"
   }
 }
