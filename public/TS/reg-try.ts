@@ -73,9 +73,7 @@ window.onload = function() {
             }
               const sliderElements: NodeList = document.querySelectorAll('.slider__section');
               for (const sliderElement of Array.from(sliderElements)) {
-                ($(sliderElement) as any).slick('slickSetOption', {
-                  slidesToShow: 6,
-                }, true);
+                ($(sliderElement) as any).slick('slickSetOption', 'slidesToShow', 6, true);
               }
               removeErrorMessage();
               removeDisabledClass();

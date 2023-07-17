@@ -69,9 +69,7 @@ window.onload = function () {
                         }
                         const sliderElements = document.querySelectorAll('.slider__section');
                         for (const sliderElement of Array.from(sliderElements)) {
-                            $(sliderElement).slick('slickSetOption', {
-                                slidesToShow: 6,
-                            }, true);
+                            $(sliderElement).slick('slickSetOption', 'slidesToShow', 6, true);
                         }
                         removeErrorMessage();
                         removeDisabledClass();
