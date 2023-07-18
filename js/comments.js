@@ -22,7 +22,10 @@ async function loadMovieComments(movieId, language) {
   try {
     const comments = await getMovieComments(movieId, language);
     const commentsContainer = document.getElementById('commentsContainer');
-
+    if (comments.length === 0) {
+      commentsContainer.innerHTML = '<p>Комментариев нет</p>';
+      return;
+    }
     for (const comment of comments) {
       const commentElement = document.createElement('div');
       commentElement.classList.add('comment');
@@ -48,18 +51,20 @@ function commentSlider() {
 
   prevCommentBtn.addEventListener('click', () => {
     currentIndex--;
+    // проверка - текущий индекс не стал меньше 0
     if (currentIndex < 0) {
-      currentIndex = commentElements.length - 1;
+      currentIndex = commentElements.length - 1; // устанавливка текущего индекса в последний комментарий
     }
     showComment(currentIndex);
   });
 
   nextCommentBtn.addEventListener('click', () => {
     currentIndex++;
+    // проверка - текущий индекс не превысил количество комментариев
     if (currentIndex >= commentElements.length) {
-      currentIndex = 0;
+      currentIndex = 0; // установка текущего индекса в первый комментарий
     }
-    showComment(currentIndex);
+    showComment(currentIndex); // отображение комментария с текущим индексом
   });
 }
 
