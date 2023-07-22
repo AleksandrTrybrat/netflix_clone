@@ -2,7 +2,7 @@
   "name": "clone_netflix",
   "version": "1.0.0",
   "description": "",
-  "main": "../js/api.js",
+  "main": "electron.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
@@ -43,7 +43,7 @@
       "icon": "./img/netflix_electron.png"
     },
     "directories": {
-      "output": "./build-netflix"
+      "output": "./build/"
     },
     "nsis": {
       "oneClick": false,
