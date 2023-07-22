@@ -14,6 +14,8 @@ site with partially similar functionality and using a third-party api display mo
      
   2.1) If you used item 1.2, then, in the terminal, specify the command cd clone_netflix. This will navigate to the folder with the application files.
 
+The following points apply if the files were downloaded according to 1.1 or 1.2:
+
   2.2) In the terminal enter the command npm ci - to install all packages and dependencies used to run the application, the node_modules folder should appear.
 
   2.3) After that, to start the dextop application, specify the command npm start in the terminal and the application window will appear.
@@ -33,8 +35,8 @@ site with partially similar functionality and using a third-party api display mo
 2. Для запуска десктопной версии приложения, повторите указаные пункты выше по скачиванию файлов:
      
   2.1) Если воспользовались пунктом 1.2 то, в терминале укажите команду cd clone_netflix. Так выполнится переход в папку с файлами приложения.
-
-     Следующие пункты применимы если файлы были скачаны согласно пункта 1.1 или 1.2:
+  
+Следующие пункты применимы, если файлы были загружены в соответствии с 1.1 или 1.2:
      
   2.2) В терминале введите команду npm ci - для установки всех пакетов и зависимостей используемых для работы приложения, должна появится папка node_modules.
 
