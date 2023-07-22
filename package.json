@@ -2,7 +2,7 @@
   "name": "clone_netflix",
   "version": "1.0.0",
   "description": "",
-  "main": "electron.js",
+  "main": "src/electron.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
