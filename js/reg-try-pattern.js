@@ -10,6 +10,7 @@ const RegistrationModule = (function() {
   const avatarImage = document.querySelector('.nav__avatar');
   const banner = document.getElementById('banner-for-reg');
   const films = document.getElementById('films-for-reg');
+  const footer = document.getElementById('footer-for-reg');
   const registration = document.getElementById('registration');
   const buttonStep0 = document.querySelector('.form__btn');
   const menuLinks = document.querySelectorAll('.menu__link');
@@ -47,6 +48,7 @@ const RegistrationModule = (function() {
         registration.style.display = 'none';
         films.style.display = 'block';
         banner.style.display = 'block';
+        footer.style.display = 'block';
         const sliderElements = document.querySelectorAll('.slider__section');
         for (const sliderElement of sliderElements) {
           $(sliderElement).slick('slickSetOption', 'slidesToShow', 6, true);
@@ -74,12 +76,14 @@ const RegistrationModule = (function() {
       registration.style.opacity = '1';
       films.style.display = 'none';
       banner.style.display = 'none';
+      footer.style.display = 'none';
       addDisabledClass();
     } else {
       avatarImage.src = 'img/netflix-avatar.png';
       registration.style.display = 'none';
       films.style.display = 'block';
       banner.style.display = 'block';
+      footer.style.display = 'block';
       removeDisabledClass();
     }
   }
