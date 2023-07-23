@@ -130,17 +130,15 @@ window.onload = function() {
     }
 
     // скрытие мигания
-    const homeLink = document.getElementById('home-link');
-    const registration = document.getElementById('registration');
+    // const homeLink = document.getElementById('home-link');
+    // const registration = document.getElementById('registration');
 
-    homeLink.addEventListener('click', function(event) {
-        event.preventDefault();
-        registration.style.opacity = '0';
-        setTimeout(function() {
-        window.location.href = homeLink.href;
-        }, 0); 
-    });
-
+    // homeLink.addEventListener('click', function(event) {
+    //     event.preventDefault();
+    //     registration.style.opacity = '0';
+    //     setTimeout(function() {
+    //     window.location.href = homeLink.href;
+    //     }, 0); 
+    // });
 
 };
-  
