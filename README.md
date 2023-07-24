@@ -20,9 +20,13 @@ The following points apply if the files were downloaded according to 1.1 or 1.2:
 
   2.3) After that, to start the dextop application, specify the command npm start in the terminal and the application window will appear.
 
-  2.4) To create a build build of the application to get the .exe file, specify the command npm run build in the terminal. The build folder with all necessary files will appear in the root of the project.
+  2.4) To create a build of the application, to get the .exe file, specify the command npm run build in the terminal. The build folder with all necessary files will appear in the root of the project.
+
+  2.5) To run tests by Jest, change package.json "main" like this  "main": "./jest/api.js"  and specify the command npm run test in the terminal. Tests will be run and displayed as a coverage table.
+ 
 
 =============================================
+
 
  1. Для запуска веб версии приложения:
       
@@ -42,4 +46,9 @@ The following points apply if the files were downloaded according to 1.1 or 1.2:
 
   2.3) После этого для запуска декстопного приложения в терминале укажите команду npm start и появится окно приложения.
 
-  2.4) Для создания build сборки приложения для получения .exe файла, в терминале укажите команду npm run build. И в корне проекта появится папка build со всеми необходимыми файла.
+  2.4) Для создания build сборки приложения для получения .exe файла, в терминале укажите команду npm run build. И в корне проекта появится папка build со всеми необходимыми файлами.
+
+  2.5) Для запуска тестирования основных модулей проекта с использованием фреймворка Jest, используйте поле JSON объекта package.json "main": в редакции "main": "./jest/api.js", а в терминале укажите команду npm run test. Тесты будут запущенны с выводом таблицы, с покрытием тестами.
+
+
+
