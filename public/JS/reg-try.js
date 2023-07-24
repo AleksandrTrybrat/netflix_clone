@@ -166,19 +166,19 @@ window.onload = function () {
         }
     }
     // скрытие мигания
-    const homeLink = document.getElementById('home-link');
-    const registration = document.getElementById('registration');
-    if (homeLink && registration) {
-        homeLink.addEventListener('click', function (event) {
-            event.preventDefault();
-            if (registration) {
-                registration.style.opacity = '0';
-            }
-            setTimeout(function () {
-                if (homeLink) {
-                    window.location.href = homeLink.href;
-                }
-            }, 0);
-        });
-    }
+    // const homeLink: HTMLAnchorElement | null = document.getElementById('home-link') as HTMLAnchorElement;
+    // const registration: HTMLElement | null = document.getElementById('registration');
+    // if (homeLink && registration) {
+    //   homeLink.addEventListener('click', function(event) {
+    //     event.preventDefault();
+    //     if (registration) {
+    //       registration.style.opacity = '0';
+    //     }
+    //     setTimeout(function() {
+    //       if (homeLink) {
+    //         window.location.href = homeLink.href;
+    //       }
+    //     }, 0);
+    //   });
+    // }
 };
