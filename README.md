@@ -6,7 +6,7 @@ Website with partially similar functionality and using a third-party api display
 
 - 1.1. You can download the archive from the repository, unzip it and open the folder via VS Code. Go to the index.html file and run the file through Live Server.
 
-- 1.2. Or create an empty folder, open it via VS Code and in the terminal specify the **command** `git clone https://github.com/AleksandrTrybrat/clone_netflix.git`.
+- 1.2. Or create an empty folder, open it via VS Code and in the terminal specify the **command** `git clone https://github.com/OleksandrTrybrat/clone_netflix.git`.
 
 - 1.3. A folder `clone_netflix` will appear in your folder. Find index.html file in it and repeat launching the web version according to point 1.1.
 
@@ -28,7 +28,7 @@ Website with partially similar functionality and using a third-party api display
 
 - 1.1. Можно скачать архив с репозитория, разархивировать его и открыть папку через VS Code. Перейти в файл index.html и запустить файл через Live Server.
 
-- 1.2. Или создать пустую папку, открыть ее через VS Code и в терминале указать **команду** `git clone https://github.com/AleksandrTrybrat/clone_netflix.git`.
+- 1.2. Или создать пустую папку, открыть ее через VS Code и в терминале указать **команду** `git clone https://github.com/OleksandrTrybrat/clone_netflix.git`.
 
 - 1.3. В вашей папке появится папка `clone_netflix`. Находим в ней файл index.html и повторяем запуск веб версии согласно пункта 1.1.
 
